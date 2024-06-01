@@ -16,7 +16,7 @@ Here we focus on aliases. Especially, that we can use them as a simple precautio
 ### Global
 
 File: `~/.gitconfig`
-```toml
+```ini
 [alias]
     backup = branch --force backup
     lol = log --graph --decorate --pretty=oneline --abbrev-commit
