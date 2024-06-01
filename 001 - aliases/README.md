@@ -16,7 +16,7 @@ Here we focus on aliases. Especially, that we can use them as a simple precautio
 ### Global
 
 File: `~/.gitconfig`
-```
+```toml
 [alias]
     backup = branch --force backup
     lol = log --graph --decorate --pretty=oneline --abbrev-commit
@@ -32,7 +32,7 @@ git config --global alias.backup "branch --force backup"
 ### Repo-local
 
 File: `[REPO_PATH]/.git/config`
-```
+```toml
 [alias]
     backup = branch --force backup
     lol = log --graph --decorate --pretty=oneline --abbrev-commit
@@ -79,5 +79,5 @@ f"
 ```
 
 # Read more
-[Git Aliases - Official docs](https://git-scm.com/book/en/v2/Git-Basics-Git-Aliases)
-[Git Config - Official docs](https://git-scm.com/docs/git-config)
+- [Git Aliases - Official docs](https://git-scm.com/book/en/v2/Git-Basics-Git-Aliases)
+- [Git Config - Official docs](https://git-scm.com/docs/git-config)
