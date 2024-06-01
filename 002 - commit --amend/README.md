@@ -3,6 +3,14 @@
 I’ve just made a commit, but I need to edit it 😱
 
 ## Change files
+Change commit message
+
+```sh
+git commit --amend
+git commit --amend -m "New commit message"
+```
+
+## Change files
 
 Simply edit files. Add changes like when we want to create new commit. Commit with `—amend`.
 
@@ -12,6 +20,9 @@ As a result, last commit contains all added changes.
 echo "My change to file" >> FILE_TO_BE_CHANGED.txt
 git add .
 git commit --amend
+
+# jusst change files, but not a commit message
+git commit --amend --no-edit
 ```
 
 ## Change author
@@ -29,7 +40,10 @@ git config user.name "New Author"
 git config user.email "new.author@null.com"
 
 # set currently configured author
-git comfig --amend --reset-author
+git commit --amend --reset-author
+
+# change author, but not a commit message
+git commit --amend --reset-author --no-edit
 
 ---
 
