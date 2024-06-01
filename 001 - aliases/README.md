@@ -32,7 +32,7 @@ git config --global alias.backup "branch --force backup"
 ### Repo-local
 
 File: `[REPO_PATH]/.git/config`
-```toml
+```ini
 [alias]
     backup = branch --force backup
     lol = log --graph --decorate --pretty=oneline --abbrev-commit
