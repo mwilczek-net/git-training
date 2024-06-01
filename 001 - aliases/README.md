@@ -18,9 +18,9 @@ Here we focus on aliases. Especially, that we can use them as a simple precautio
 File: `~/.gitconfig`
 ```
 [alias]
-	backup = branch --force backup
-	lol = log --graph --decorate --pretty=oneline --abbrev-commit
-	current-branch = "symbolic-ref --short HEAD"
+    backup = branch --force backup
+    lol = log --graph --decorate --pretty=oneline --abbrev-commit
+    current-branch = "symbolic-ref --short HEAD"
     merge-dev = "!f() { CURRENT_BRANCH_NAME=\"$(git current-branch)\"; echo \"Executing git merge-dev for branch: ${CURRENT_BRANCH_NAME}\"; echo \"Removing branch dev\"; git branch -D dev; echo \"Backuping branch: ${CURRENT_BRANCH_NAME}\" && git backup && echo \"Fetching\" && git fetch --prune && echo \"Pulling origin qa to branch: ${CURRENT_BRANCH_NAME}\" && git pull origin qa && echo \"Pushing branch: ${CURRENT_BRANCH_NAME}\" && git push && echo \"Checkingout dev\" && git checkout dev && echo \"Merging ${CURRENT_BRANCH_NAME}\\ to dev\" && git merge \"${CURRENT_BRANCH_NAME}\" && echo \"Pushing dev\" && git push && echo \"Going back to branch: ${CURRENT_BRANCH_NAME}\" && git checkout \"${CURRENT_BRANCH_NAME}\" ; }; f"
 ```
 
@@ -34,9 +34,9 @@ git config --global alias.backup "branch --force backup"
 File: `[REPO_PATH]/.git/config`
 ```
 [alias]
-	backup = branch --force backup
-	lol = log --graph --decorate --pretty=oneline --abbrev-commit
-	current-branch = "symbolic-ref --short HEAD"
+    backup = branch --force backup
+    lol = log --graph --decorate --pretty=oneline --abbrev-commit
+    current-branch = "symbolic-ref --short HEAD"
 ```
 
 Manual
