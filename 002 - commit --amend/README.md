@@ -44,6 +44,7 @@ git commit --amend --reset-author
 
 # change author, but not a commit message
 git commit --amend --reset-author --no-edit
+```
 
 ---
 
