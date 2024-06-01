@@ -78,6 +78,8 @@ merge-dev = "!f() { echo \"my script\" ; }; f"
 f"
 ```
 
+---
+
 # Read more
 - [Git Aliases - Official docs](https://git-scm.com/book/en/v2/Git-Basics-Git-Aliases)
 - [Git Config - Official docs](https://git-scm.com/docs/git-config)
