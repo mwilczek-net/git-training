@@ -1,4 +1,4 @@
-# git reflog
+# `git reflog`
 
 > Holy Moly! I’ve just deleted a branch / tag / commit or screwed amending / rebasing / merging, etc. 💩
 

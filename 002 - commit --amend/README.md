@@ -1,4 +1,4 @@
-# git commit --amend
+# `git commit --amend`
 
 I’ve just made a commit, but I need to edit it 😱
 
