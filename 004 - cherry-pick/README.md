@@ -2,6 +2,13 @@
 
 Basic function of `git cherry-pick` is taking a commit and placing it on other branch.
 
+## Basic
+Basic syntax
+```sh
+git cherry-pick COMMIT-ID
+```
+
+## Demo
 ```sh
 echo '----- switch to branch "practice/cherry-pick" -----'
 git checkout practice/cherry-pick
