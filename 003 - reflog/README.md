@@ -18,12 +18,21 @@ Good news: `git` remembers commits, even if there are not on any branch or tag. 
 There is possibility to play in this repo. Clone it and play with branch `practice/reflog`.
 
 ```sh
-git clone https://github.com/mwilczek-net/git-training.git
-git checkout practice/reflog
-# lets play on copy
 git checkout -b  practice/reflog-local
+git log
 
-# TODO - add some commands
+git commit -m 'REFLOF commit 1' --allow-empty
+git commit -m 'REFLOF commit 2' --allow-empty
+git commit -m 'REFLOF commit 3' --allow-empty
+git commit -m 'REFLOF commit 4' --allow-empty
+git commit -m 'REFLOF commit 5' --allow-empty
+git commit -m 'REFLOF commit 6' --allow-empty
+git commit -m 'REFLOF commit 7' --allow-empty
+
+git checkout master
+git branch -D practice/reflog-local
+git reflog
+
 ```
 
 ---
