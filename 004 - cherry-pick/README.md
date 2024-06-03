@@ -9,7 +9,7 @@ echo '----- copy current branch to "practice/cherry-pick-local" -----'
 git checkout -b practice/cherry-pick-local
 echo '----- list commits before cherry-pick -----'
 git log
-echo '----- cherry-pick -----'
+echo '----- cherry-pick "229d377b3da7eead55a31e12f067f3224d9960bb" -----'
 git cherry-pick 229d377b3da7eead55a31e12f067f3224d9960bb
 echo '----- list commits after cherry-pick -----'
 git log
