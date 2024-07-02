@@ -62,6 +62,7 @@ removing / reordering
 ## Demo
 
 ```sh
+git checkout practice/interactive-rebase
 git checkout -b practice/interactive-rebase-local
 git rebase -i HEAD~10
 ```
