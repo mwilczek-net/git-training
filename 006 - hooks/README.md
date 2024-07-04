@@ -26,6 +26,19 @@ Some examples that are used in real projects.
 - Prepare commit message
   - Task ID is added to commit mesage. Works with `git commit -m`, and most GUIs
 
+## Demo
+
+```sh
+git checkout -b hook-test/test/test-123
+git commit --allow-empty -m "No Ticket ID added to commit msg"
+git log -6
+
+git checkout -b feature/test/test-123
+git commit --allow-empty -m "Ticket ID added by hook"
+git commit --allow-empty -m "[test-123] Ticket ID is not duplicated"
+git log -6
+```
+
 ---
 
 # Read more
