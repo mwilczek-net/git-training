@@ -13,16 +13,16 @@ if [ -z "${PREPARE_COMMIT_MSG_TICKET_ID_BRANCHES}" ]; then
     PREPARE_COMMIT_MSG_TICKET_ID_BRANCHES=(feature hotfix bugfix)
 fi
 
-current_commit_message="${1}"
+current_commit_message_file="${1}"
 
 current_branch_name=$(git symbolic-ref --short HEAD)
 current_branch_prefix="${current_branch_name%%/*}"
 ticket_id="${current_branch_name##*/}"
 
 current_branch_prefix_on_list=$(printf "%s\n" "${PREPARE_COMMIT_MSG_TICKET_ID_BRANCHES[@]}" | grep -c "^$current_branch_prefix$")
-ticket_id_in_current_commit_message=$(echo "${current_commit_message}" | grep -c "\[$ticket_id\]")
+ticket_id_in_current_commit_message=$(grep -c "\[$ticket_id\]" $1)
 
 
 if [ -n "$ticket_id" ] && [[ $current_branch_prefix_on_list -ne 0 ]] && [[ $ticket_id_in_current_commit_message -eq 0 ]]; then
-  sed -i.bak -e "1s/^/[$ticket_id] /" "${current_commit_message}"
+  sed -i.bak -e "1s/^/[$ticket_id] /" "${current_commit_message_file}"
 fi
